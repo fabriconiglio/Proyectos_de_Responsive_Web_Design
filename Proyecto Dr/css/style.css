@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(238,238,238);
+    color: #333333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/*Cuerpo de la pagina*/
+
+h1{
+    font-size: 2.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 460px){
+    h1{
+        font-size: 2.6rem;
+    }
+}
+
+p{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+#img-div{
+    background-color: white;
+    border-radius: 1rem;
+    display: block;
+    margin-left: 1rem;
+    margin-right:1rem;
+}
+
+
+#img-div img{
+    display:block;
+    margin:auto;
+    max-width: 100%;
+}
+
+#img-caption{
+    font-size: 1.05rem;
+}
+
+@media (max-width: 460px){
+    #image{
+        width: 95%;
+    }
+
+    #img-caption{
+        font-size: 0.9rem;
+    }
+}
+
+#tribute-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tribute-info h3{
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+#tribute-info ul{
+    width: 34rem;
+    
+}
+
+span{
+    font-weight:bold
+}
+
+#tribute-info p{
+    font-size: 1.16rem;
+    font-style: italic;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.final-description{
+    font-weight:bold
+}
+
+@media(max-width: 460px){
+    #tribute-info h3{
+        font-size: 1.3rem
+    }
+
+    #tribute-info ul{
+        width: 17rem;
+    }
+
+    .final-description{
+        font-size: 0.9rem;
+    }
+    
+    footer p{
+        font-size: 1rem;
+    }
+}

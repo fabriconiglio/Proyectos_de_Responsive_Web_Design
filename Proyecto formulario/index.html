@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>¿Que queres estudiar?</title>
+</head>
+<body>
+    <main>
+        <h1 id="title">Te ayudamos en la elección de la carrera</h1>
+        <p id="description">"Confía en ti mismo sin importar los que los demás piensen."</p>
+        <form action="*" method="post" id="survey-form">
+            <label for="name" id="name-label">Nombre:</label>
+            <input type="text" name="name" id="name" placeholder="Introduzca su Nombre" required>
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Introduzca su Email" required>
+            <label for="number" id="number-label">Edad:</label>
+            <input type="number" name="number" min="16" max="60" id="number" placeholder="Edad" required>
+            <label for="marketing" id="dropdown-a">¿Como nos conociste?</label>
+            <select name="marketing" id="dropdown">
+                <option disabled selected value>Seleccione una opcion</option>
+                <option value="inst">Instagram</option>
+                <option value="fb">Facebook</option>
+                <option value="lk">Linkedin</option>
+                <option value="wsp">whatsapp</option>
+            </select>
+            <p class="decision">¿Hiciste alguna vez un test vocacional?</p>
+            <label for="decision"id="decision"><input type="radio" name="decision" value="Si">Si</label>
+            <label for="decision" id="decision"><input type="radio" name="decision" value="No">No</label>
+            <p class="eleccion">¿Como te gustaria hacer el test?</p>
+            <label for="elección" id="eleccion"><input type="checkbox" name="elección" value="Virtual" tabindex="1">Virtual</label>
+            <label for="elección"  id="eleccion"><input type="checkbox" name="elección" value="Presencial" tabindex="1">Presencial</label>
+            <label for="elección"  id="eleccion"><input type="checkbox" name="elección" value="individual" tabindex="1">individual</label>
+            <label for="elección"  id="eleccion"><input type="checkbox" name="elección" value="Con ayuda de un profesiona" tabindex="1">Con ayuda de un profesional</label>
+            <p class="comentario">Algunas aclaraciones que nos quieras hacer:</p>
+            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Introduzca comentario"></textarea>
+            <div class="botones">
+                <button type="submit"id="submit">Enviar</button>
+            <button type="reset" id="reset">Resetear</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="pie">Created by Fabrizzio Coniglio <span><a href="https://www.linkedin.com/in/fabrizzioconiglio/" target="_blank"><i class="fab fa-linkedin"></a></i></p></span>
+    </footer>
+</body>
+</html>

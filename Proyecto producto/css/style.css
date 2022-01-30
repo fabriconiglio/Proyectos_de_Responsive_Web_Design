@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2CF66;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-img{
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#header-img img{
+    width: 5rem;
+    margin-top: 0.5rem;
+}
+
+ul{
+    width: 25rem;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    margin-right: 5rem;
+}
+
+
+.nav-bar{
+    text-decoration: none;
+    color: black;
+}
+
+main h1{
+    margin-top: 7rem;
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+}
+
+main form{
+    text-align: center;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email{
+    width: 15rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+#submit{
+    background-color:rgb(243,101,10);
+    border:0;
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+}
+
+article{
+    margin-top: 3rem;
+    width: 80rem;
+    margin-left: 15rem;
+}
+
+section{
+    display: flex;
+}
+
+section div{
+    margin-left: 4rem;
+}
+
+section img{
+    width: 5rem;
+    margin-left: 1rem;
+}
+
+#video{
+    margin-top: 2rem;
+    margin-left: 35rem;
+}
+
+#producto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65rem;
+    margin-left: 18rem;
+}
+
+#producto div{
+    border: solid 1px;
+    width: 20rem;
+    height: 22rem;
+}
+
+#producto div h4{
+    height: 3rem;
+    text-align: center;
+    background-color: rgb(243,101,10);
+    padding-top: 1rem;
+}
+
+#producto div p{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#producto div button{
+    margin-left: 6rem;
+    margin-top: 1.5rem;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: yellow;
+}
+
+footer{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+@media(max-width:650px){
+    header{
+    }
+
+    #header-img{
+        font-size: 1rem;
+    }
+
+    #header-img img{
+        width: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    ul{
+        width:100%;
+        font-size: 0.8rem;
+        justify-content:space-evenly;
+    }
+
+    main h1{
+        margin-top: 5rem;
+    }
+
+    article{
+        margin-top: 4rem;
+        width: 20rem;
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    section div{
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    section div h3{
+        font-size: 1rem;
+    }
+
+    section div p{
+        font-size: 0.9rem;
+    }
+
+    section img{
+        width: 3.5rem;
+    }
+
+    #video{
+        margin-left: 1.5rem;
+        width: 20rem;
+    }
+
+    #producto{
+        flex-direction: column;
+        justify-content:flex-start;
+        margin-left: 1.5rem;
+        width:20rem;
+        margin-bottom: 0rem;
+        height: 70rem;
+    }
+
+    #producto div{
+        margin-bottom: 1rem;
+    }
+
+    #producto div p{
+        font-size: 1rem;
+    }
+
+    #producto div button{
+        font-size: 1rem;
+    }
+    
+    footer p{
+        padding: 0;
+        height: 2rem;
+        margin-bottom:5rem ;
+    }
+}
