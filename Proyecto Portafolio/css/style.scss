@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    background-color:rgb(32,32,32);
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Encabezado de la pagina*/
+ #navbar{
+     height: 5rem;
+     background-color: rgb(32,32,32);
+     color: white;
+     ul{
+         display: flex;
+         flex-direction: row-reverse;
+         align-items: center;
+         font-size: 1.5rem;
+         font-weight: bold;
+         padding-top: 1rem;
+         li{
+             margin-right: 2rem;
+             list-style-type: none;
+         }
+     }
+ }
+
+#welcome-section{
+    background-color: rgb(32,32,32);
+    color: white;
+    height: 50rem;
+    h1{
+        padding-top: 13rem;
+        text-align: center;
+        font-size: 5rem;
+    }
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    div{
+        display: flex;
+        margin-top: 1rem;
+        margin-left: 42rem;
+        img{
+            width: 4rem;
+            border-radius: 30%;
+        }
+    }
+}
+#sub-projects{
+    color: white;
+    text-align: center;
+    height:1rem;
+    width: 22rem;
+    padding: 3.8rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 40rem;
+    margin-bottom: 4rem;
+    border-bottom: 0.2rem solid white;
+    background-color:rgb(32,32,32);
+}
+#projects{
+    width: 100%;
+    height: 70rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:3rem;
+    max-width: 100rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    #pags{
+        display: block;
+        width: 31rem;
+        height: 25rem;
+        border-radius: 0.5rem;
+      }
+    .project-tile{
+        background-color: rgb(255, 247, 247);
+        height: 28rem;
+        width: 31rem;
+        border-radius: 0.5rem;
+        p{
+            background-color: rgb(255, 254, 254);
+            color: black;
+            font-size: 1.5rem;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 0.5rem;
+            .code{
+                background-color: white;
+                color: white;
+                transition-property: color;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+    p:hover .code {
+        color: black;
+  }
+}
+#sub-contacts{
+    color: white;
+    text-align: center;
+    height:1rem;
+    width: 50rem;
+    padding: 3.8rem;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 30rem;
+    margin-bottom: 4rem;
+}
+.networks{
+    display: flex;
+    align-items: center;
+    margin-left: 22rem;
+    img{
+        display: block;
+        width: 2rem;
+        margin-left: 2rem;
+    }
+    span{
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        color: white;
+        font-weight: bold;
+}
+}
