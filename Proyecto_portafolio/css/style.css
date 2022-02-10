@@ -217,6 +217,7 @@ footer {
     height: 33rem;
   }
   #welcome-section h1 {
+    margin-top: 5rem;
     padding-top: 3rem;
     font-size: 2.8rem;
   }
