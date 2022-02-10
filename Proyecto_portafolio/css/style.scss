@@ -10,21 +10,30 @@ a{
     text-decoration: none;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*Encabezado de la pagina*/
  #navbar{
      height: 5rem;
+     width: 100%;
      background-color: rgb(32,32,32);
      color: white;
+     position: fixed;
      ul{
          display: flex;
          flex-direction: row-reverse;
-         align-items: center;
          font-size: 1.5rem;
          font-weight: bold;
          padding-top: 1rem;
+         margin-left: 68rem;
          li{
              margin-right: 2rem;
              list-style-type: none;
+             color: white;
          }
      }
  }
@@ -32,7 +41,10 @@ a{
 #welcome-section{
     background-color: rgb(32,32,32);
     color: white;
-    height: 50rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h1{
         padding-top: 13rem;
         text-align: center;
@@ -48,8 +60,8 @@ a{
     }
     div{
         display: flex;
+        align-items: center;
         margin-top: 1rem;
-        margin-left: 42rem;
         img{
             width: 4rem;
             border-radius: 30%;
@@ -64,7 +76,6 @@ a{
     padding: 3.8rem;
     font-size: 2.5rem;
     font-weight: bold;
-    margin-left: 40rem;
     margin-bottom: 4rem;
     border-bottom: 0.2rem solid white;
     background-color:rgb(32,32,32);
@@ -76,19 +87,19 @@ a{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap:3rem;
-    max-width: 100rem;
     margin: 0 auto;
     margin-bottom: 6rem;
     #pags{
         display: block;
-        width: 31rem;
+        width: 25rem;
         height: 25rem;
         border-radius: 0.5rem;
       }
     .project-tile{
         background-color: rgb(255, 247, 247);
         height: 28rem;
-        width: 31rem;
+        width: 25rem;
+        margin-left: 2rem;
         border-radius: 0.5rem;
         p{
             background-color: rgb(255, 254, 254);
@@ -117,13 +128,13 @@ a{
     padding: 3.8rem;
     font-size: 4rem;
     font-weight: bold;
-    margin-left: 30rem;
     margin-bottom: 4rem;
 }
 .networks{
     display: flex;
-    align-items: center;
-    margin-left: 22rem;
+    a{
+        display: flex;
+    }
     img{
         display: block;
         width: 2rem;
@@ -135,4 +146,93 @@ a{
         color: white;
         font-weight: bold;
 }
+}
+
+footer{
+    margin-top: 2rem;
+    color: white;
+}
+
+@media(max-width:650px){
+    body{
+        height: 100%;
+    }
+    #navbar{
+        ul{
+            margin-left: 1.3rem;
+            font-size: 1.2rem;
+        }
+    }
+    
+    #welcome-section{
+        height: 33rem;
+        h1{
+            padding-top: 3rem;
+            font-size: 2.8rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+        div{
+            margin-top: 2rem;
+            img{
+                width: 3rem;
+            }
+        }
+    }
+
+    #sub-projects{
+        font-size: 1.5rem;
+        width: 20rem;
+        padding: 2.4rem;
+        border-bottom: 1px solid white;
+        margin-bottom: 2rem;
+    }
+
+    #projects{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around ;
+        align-items: center;
+        height: 130rem;
+        margin-bottom: 1rem;
+        #pags{
+            width: 18rem;
+            height: 18rem;
+        }
+        .project-tile{
+            grid-gap: 0;
+            margin-left: 0;
+            margin-bottom: 4rem;
+            width: 18rem;
+            height: 20rem;
+        }
+    }
+
+    #sub-contacts{
+        width: 21rem;
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+    }
+
+    .networks{
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+        margin-bottom:0;
+        img{
+            margin-bottom: 1rem;
+        }
+    }
+
+    footer{
+        p{
+            margin-bottom:8rem ;
+        }
+    }
 }

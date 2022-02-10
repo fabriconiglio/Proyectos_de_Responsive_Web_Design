@@ -77,7 +77,7 @@ main form{
 article{
     margin-top: 3rem;
     width: 80rem;
-    margin-left: 15rem;
+    margin-left: 10rem;
 }
 
 section{
@@ -85,7 +85,7 @@ section{
 }
 
 section div{
-    margin-left: 4rem;
+    margin-left: 3rem;
 }
 
 section img{
@@ -95,7 +95,7 @@ section img{
 
 #video{
     margin-top: 2rem;
-    margin-left: 35rem;
+    margin-left: 33rem;
 }
 
 #producto{
@@ -103,7 +103,7 @@ section img{
     justify-content: space-between;
     align-items: center;
     width: 65rem;
-    margin-left: 18rem;
+    margin-left: 16rem;
 }
 
 #producto div{
@@ -142,8 +142,6 @@ footer{
 }
 
 @media(max-width:650px){
-    header{
-    }
 
     #header-img{
         font-size: 1rem;

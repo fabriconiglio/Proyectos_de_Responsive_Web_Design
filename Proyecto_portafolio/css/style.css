@@ -11,11 +11,26 @@ a {
   text-decoration: none;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /*Encabezado de la pagina*/
 #navbar {
   height: 5rem;
+  width: 100%;
   background-color: #202020;
   color: white;
+  position: fixed;
 }
 
 #navbar ul {
@@ -26,23 +41,32 @@ a {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
   padding-top: 1rem;
+  margin-left: 68rem;
 }
 
 #navbar ul li {
   margin-right: 2rem;
   list-style-type: none;
+  color: white;
 }
 
 #welcome-section {
   background-color: #202020;
   color: white;
-  height: 50rem;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #welcome-section h1 {
@@ -65,8 +89,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 1rem;
-  margin-left: 42rem;
 }
 
 #welcome-section div img {
@@ -82,7 +108,6 @@ a {
   padding: 3.8rem;
   font-size: 2.5rem;
   font-weight: bold;
-  margin-left: 40rem;
   margin-bottom: 4rem;
   border-bottom: 0.2rem solid white;
   background-color: #202020;
@@ -98,14 +123,13 @@ a {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-gap: 3rem;
-  max-width: 100rem;
   margin: 0 auto;
   margin-bottom: 6rem;
 }
 
 #projects #pags {
   display: block;
-  width: 31rem;
+  width: 25rem;
   height: 25rem;
   border-radius: 0.5rem;
 }
@@ -113,7 +137,8 @@ a {
 #projects .project-tile {
   background-color: #fff7f7;
   height: 28rem;
-  width: 31rem;
+  width: 25rem;
+  margin-left: 2rem;
   border-radius: 0.5rem;
 }
 
@@ -147,7 +172,6 @@ a {
   padding: 3.8rem;
   font-size: 4rem;
   font-weight: bold;
-  margin-left: 30rem;
   margin-bottom: 4rem;
 }
 
@@ -155,10 +179,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 22rem;
+}
+
+.networks a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .networks img {
@@ -172,5 +198,97 @@ a {
   font-size: 1.2rem;
   color: white;
   font-weight: bold;
+}
+
+footer {
+  margin-top: 2rem;
+  color: white;
+}
+
+@media (max-width: 650px) {
+  body {
+    height: 100%;
+  }
+  #navbar ul {
+    margin-left: 1.3rem;
+    font-size: 1.2rem;
+  }
+  #welcome-section {
+    height: 33rem;
+  }
+  #welcome-section h1 {
+    padding-top: 3rem;
+    font-size: 2.8rem;
+  }
+  #welcome-section h2 {
+    font-size: 1.5rem;
+  }
+  #welcome-section p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  #welcome-section div {
+    margin-top: 2rem;
+  }
+  #welcome-section div img {
+    width: 3rem;
+  }
+  #sub-projects {
+    font-size: 1.5rem;
+    width: 20rem;
+    padding: 2.4rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 2rem;
+  }
+  #projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 130rem;
+    margin-bottom: 1rem;
+  }
+  #projects #pags {
+    width: 18rem;
+    height: 18rem;
+  }
+  #projects .project-tile {
+    grid-gap: 0;
+    margin-left: 0;
+    margin-bottom: 4rem;
+    width: 18rem;
+    height: 20rem;
+  }
+  #sub-contacts {
+    width: 21rem;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+  .networks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 15rem;
+    margin-bottom: 0;
+  }
+  .networks img {
+    margin-bottom: 1rem;
+  }
+  footer p {
+    margin-bottom: 8rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
